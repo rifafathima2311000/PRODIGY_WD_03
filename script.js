@@ -11,9 +11,9 @@ const currentPlayerTurn = () => `🟢 ${currentPlayer}'s turn`;
 statusDisplay.innerHTML = currentPlayerTurn();
 
 const winningConditions = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-    [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-    [0, 4, 8], [2, 4, 6]             // Diagonals
+    [0, 1, 2], [3, 4, 5], [6, 7, 8], 
+    [0, 3, 6], [1, 4, 7], [2, 5, 8],
+    [0, 4, 8], [2, 4, 6]             
 ];
 
 function handleCellPlayed(clickedCell, clickedCellIndex) {
@@ -32,7 +32,7 @@ function handleResultValidation() {
             statusDisplay.innerHTML = winningMessage();
             gameActive = false;
 
-            // 🎉 Confetti shower when someone wins
+      
             confetti({
                 particleCount: 200,
                 spread: 100,
@@ -63,7 +63,7 @@ function handleCellClick(event) {
 
     handlePlayerChange();
 
-    // Simple AI move (Player O)
+
     if (currentPlayer === "O" && gameActive) {
         setTimeout(() => {
             const emptyCells = gameState
