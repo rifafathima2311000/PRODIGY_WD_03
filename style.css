@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-    background-image: url('img.png'); /* Replace with your actual path or URL */
+    background-image: url('img.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ body {
     padding: 20px;
 }
 
-/* Main section */
+
 section {
     text-align: center;
     background: rgba(255, 255, 255, 0.7);
@@ -36,7 +36,7 @@ section {
     max-width: 600px;
 }
 
-/* Main Title */
+
 .game--title {
     font-size: 60px;
     color: #d76d77;
@@ -44,14 +44,14 @@ section {
     margin-bottom: 10px;
 }
 
-/* Subheading */
+
 .game--subtitle {
     font-size: 22px;
     color: #374785;
     margin-bottom: 5px;
 }
 
-/* Tagline */
+
 .game--tagline {
     font-size: 16px;
     font-style: italic;
@@ -59,7 +59,6 @@ section {
     margin-bottom: 20px;
 }
 
-/* Game board */
 .game--container {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -68,7 +67,7 @@ section {
     margin: 20px auto;
 }
 
-/* Each cell */
+
 .cell {
     width: 100px;
     height: 100px;
@@ -90,7 +89,7 @@ section {
     transform: scale(1.05);
 }
 
-/* Game status */
+
 .game--status {
     font-size: 28px;
     color: #f9844a;
@@ -99,7 +98,7 @@ section {
     min-height: 40px;
 }
 
-/* Restart button */
+
 .game--restart {
     background-color: #ffd6a5;
     padding: 10px 25px;
